@@ -1,6 +1,7 @@
 import React from "react";
 import "./RecipeCard.css";
 
+
 let RecipeCard = props => {
   const {
     name,
@@ -10,6 +11,7 @@ let RecipeCard = props => {
     ingredients,
     instructions
   } = props;
+
   const ingredientsDisplay = ingredients.map((ingredient, i) => {
     return <li key={i}>{ingredient}</li>;
   });
